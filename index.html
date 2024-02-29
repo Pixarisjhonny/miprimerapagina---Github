@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primera web</title>
+  <script src="https://kit.fontawesome.com/a90aef9be4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header id="encabezado">
+      <!--Logo principal-->
+      <a href="index.html"><img src="img/logos/JK Logo.png" alt="Logo JK" width="75" height="75"></a>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#seccion-principal">Acerca de mi</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#trabajos">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="seccion-principal">
+      <section class="seccion-1">
+        <div class="acerca-de-mi">
+          <h2 class="texto-acerca-de-mi">Acerca de mí</h2>
+          <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+          <p class="parrafo2">¡Hola! Soy Jhonny, originario de Rivera, Uruguay, ciudad que actualmente resido. Mi pasión por los videojuegos se combina con mi deseo de aprender a programar. Sueño con utilizar mis habilidades para ayudar a las personas y empresas a destacar en línea. Cuando no estoy inmerso en el fascinante mundo de la programación, disfruto saliendo con mi esposa y explorando nuevas experiencias juntos. Únete a mí en este viaje donde la creatividad y la tecnología se encuentran para crear algo único y significativo. ¡Bienvenido a mi espacio digital! 🎮💻.</p>
+        </div>
+        <div class="acerca-imagen">
+          <img src="img/FOTO DE PERFIL.png" alt="imagen personal" width="300" height="300">
+        </div>
+      </section>
+      <section class="seccion-2">
+        <img src="img/carrusel/Design sem nome.png" alt="imagen de carrusel" class="full-width-image">
+    </section>
+      <!--Trabajos-->
+      <div id="trabajos">
+        <div class="trabajo-1">
+            <img src="img/Imagenes/img PROY IDR.jpg" alt="Trabajo 1" width="300" height="170"> 
+            <p class="texto-trabajos">Becário en Proyecto dentro de la División de Vialidad Rural de la Intendencia Departamental de Rivera</p>
+        </div>
+        <div class="trabajo-2">
+            <img src="img/Imagenes/img PROY TESTING.jpg" alt="Trabajo 2" width="300" height="170"> 
+            <p class="texto-trabajos">Realización de proyecto de testing en Página web e-mercado para titulación como Tester Jr.</p>
+        </div>
+        <div class="trabajo-3">
+          <img src="img/Imagenes/Logistica e tecnologia.jpg" alt="Trabajo 2" width="300" height="170"> 
+            <p class="texto-trabajos">Aspiro a continuar trabajando en la integración de la tecnología con la logística para optimizar las cadenas de suministro a nivel mundial</p>
+        </div>
+    </div>
+      <footer id="contacto">
+      <div class="formulario-container">
+        <h1>Contacto</h1>
+      <p><em>¡Esperamos tu consulta!</em></p>
+
+      <form action="" method="get" class="formulario" id="form">
+        <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+              required
+            />
+        </div>
+        <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+            <button>Enviar</button>
+          </div>
+        <p class="alertas" id="alertas"></p>
+      </form>
+    </div>
+        
+        <div id="footer">
+          <h3 class="contacto">
+            Contacto
+
+          </h3>
+        <!--Lista de Redes Sociales-->
+        <ul class="Redes">
+          <li><a href="https://www.linkedin.com/in/jhonny-rodriguezz/" target="_blank"><img src="img/logos/Linkedin.png" alt="Logo de mi perfil de LinkedIn" class="Logo-de-mi-perfil-de-Linkedin" width="40" height="40"></a></li>
+          <li><a href="https://www.instagram.com/jhonnyrodriguez.8/" target="_blank"><img src="img/logos/Instagram.png" alt="Logo de mi perfil de Instagram" class="Logo-de-mi-perfil-de-Instagram" width="40" height="40"></a></li>
+          <li><a href="https://www.facebook.com/jhonny.a.rodriguez2" target="_blank"><img src="img/logos/facebook.png" alt="Logo de mi perfil de Facebook" class="Logo-de-mi-perfil-de-Facebook" width="40" height="40"></a></li>
+        </ul>
+      <a href="https://api.whatsapp.com/send?phone=59899484403" target="_blank" class="whatsapp"><img src="img/logos/whatsapp logo.png" alt="Logo de mi perfil de LinkedIn" class="Boton-de-whatsapp" width="40" height="40">
+      </a>
+
+      </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

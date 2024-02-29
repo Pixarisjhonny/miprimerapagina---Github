@@ -1,0 +1,403 @@
+/* Estilos generales */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Anta', sans-serif;
+  background-color: #042D62; /* Cambiado: Agregado fondo al body para evitar que se vean márgenes */
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+  .texto-trabajos {
+    margin-top: 10px;
+  }
+
+  .seccion-2 {
+    width: 100%;
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  background-color: #021024;
+  color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Anta", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2em;
+  justify-content: space-between;
+  margin-right: 1em;
+  list-style: none;
+}
+
+/* Ajuste para la sección 1 */
+.seccion-1 {
+  background-color: #042D62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+.acerca-de-mi{
+  color: #ffffff;
+}
+
+/* Ajuste para la imagen de la sección 2 */
+.seccion-2 img.full-width-image {
+  width: 100%;
+  height: auto;
+  max-height: 60vh; /* Cambiado: Limita la altura para evitar que ocupe demasiado espacio */
+  object-fit: cover;
+  margin: 0; /* Cambiado: Elimina cualquier margen o relleno */
+}
+#trabajos {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.trabajo-1,
+.trabajo-2,
+.trabajo-3 {
+  text-align: center;
+  margin: 0 5em;
+}
+
+.trabajo-1 img,
+.trabajo-2 img,
+.trabajo-3 img {
+  border-radius: 20px;
+  margin-bottom: 0.5em;
+}
+
+.trabajo-2 img {
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+.trabajo-3 img {
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.texto-trabajos {
+  color: white;
+  font-family: "Anta", sans-serif;
+  text-align: justify;
+  max-width: 300px;
+}
+/* Ajuste para la sección de contacto */
+footer{
+  width: 100%;
+  background-color:#042D62;
+}
+/* Ajuste para la sección de formulario */
+.formulario-container h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.formulario-container p{
+  color:white;
+  text-align:center;
+}
+.formulario {
+  background-color: #042D62;
+  border: #042D62 3px outset;
+  border-radius: 1px;
+  justify-content: center;
+  width: 50%;
+  padding: 50px;
+  margin: 30px auto; /* Centra el formulario horizontalmente */
+}
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 0 0 10%;
+  width: 80%;
+}
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #73a6e9;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #73a6e9;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color:#1689FE;
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.form-row button:hover {
+  background-color: rgb(250, 250, 250);
+  color: rgb(0, 0, 0);
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+#contacto {
+  background-color: #042D62;
+  color: #ffffff;
+}
+
+/* Ajuste para el botón de WhatsApp */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.Redes li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.whatsapp {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+.whatsapp:hover {
+  transform: scale(1.2);
+}
+
+.whatsapp:active {
+  transform: scale(1.5);
+}
+
+/* MENU */
+#check{
+  display: none;
+}
+.checkbtn{
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #encabezado ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #042D62;
+    text-align: center;
+    top: 80px;
+    left: 100%;
+    transition: left 0.5s; /* Cambiado: Solo transición en la propiedad left */
+  }
+
+  #check:checked ~ ul {
+    left: 0%;
+    display: block;
+  }
+
+  #encabezado nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  #encabezado nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ .checkbtn {
+    color: #042D62;
+  }
+
+  .seccion-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .acerca-de-mi {
+    width: 300px;
+  }
+
+  .seccion-2 img.full-width-image {
+    width: 100%;
+    max-height: 60vh;
+  }
+
+  #trabajos {
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+  }
+
+  .trabajo-1,
+  .trabajo-2,
+  .trabajo-3 {
+    width: 100%;
+    margin: 0 1em;
+  }
+
+  .texto-trabajos {
+    max-width: 300px;
+    text-align: justify;
+    margin: 10px auto;
+  }
+
+  .trabajo-1 img,
+  .trabajo-2 img,
+  .trabajo-3 img {
+    margin-bottom: 0.5em;
+  }
+
+  .whatsapp {
+    bottom: 10px;
+    right: 10px;
+  }
+  .formulario-container h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .formulario-container p{
+    color:white;
+    text-align:center;
+  }
+  .formulario {
+    background-color:#042D62;
+    border: #042D62 3px outset;
+    border-radius: 1px;
+  
+    width: 60%;
+    padding: 50px;
+    margin: 30px 0px 0px 20px;
+  }
+  .form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    background-color: #73a6e9;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #73a6e9;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color:#1689FE;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  .form-row button:hover {
+    background-color: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);
+  }
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+}
