@@ -240,6 +240,11 @@ footer{
   font-size: 20px;
   margin: 0px 0px 0px 30px;
 }
+.greeting p{
+  color: #ffffff;
+  justify-content: center;
+  size: 30px;
+}
 
 /* MEDIA QUERIES*/
 
